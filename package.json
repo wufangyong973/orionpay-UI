@@ -2,10 +2,13 @@
   "name": "orionpay-frontend",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=18.18"
+  },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node api.js && next dev",
+    "build": "node api.js && next build",
+    "start": "node api.js && next start",
     "lint": "next lint",
     "test": "vitest run",
     "test:watch": "vitest"
